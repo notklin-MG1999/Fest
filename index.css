@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #fdf6f0, #fce4d6);
+    color: #333;
+    padding: 0 15px;
+}
+
+header {
+    text-align: center;
+    padding: 30px 10px;
+    background: #ff6f61;
+    color: white;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+.tag {
+    font-size: 1rem;
+    font-style: italic;
+}
+.event-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.05);
+}
+.info-item {
+    font-size: 1rem;
+}
+.icon {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+.description, .schedule {
+    background: white;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.05);
+}
+.description h2, .schedule h2 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+.description p {
+    text-align: justify;
+}
+.schedule ul {
+    list-style: none;
+    padding-left: 0;
+}
+.schedule li {
+    padding: 8px 0;
+    border-bottom: 1px solid #d3cfcf;
+}
+.schedule li:last-child {
+    border-bottom: none;
+}
+.c {
+    text-align: center;
+    margin: 30px 0;
+}
+.c .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6f61;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 1s;
+}
+.c .btn:hover {
+    background: #e85a50;
+}
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 15px;
+    color: #666;
+}
+@media (min-width: 600px) {
+    .event-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+header,.event-info,.description,.schedule,.c {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover,.event-info:hover,.description:hover,.schedule:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
